@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/seanapark/test.git/static/css/main.f855e6bc.css",
+    "main.js": "/seanapark/test.git/static/js/main.3a4574b6.js",
+    "static/js/453.56f46472.chunk.js": "/seanapark/test.git/static/js/453.56f46472.chunk.js",
+    "static/media/logo.svg": "/seanapark/test.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/seanapark/test.git/index.html",
+    "main.f855e6bc.css.map": "/seanapark/test.git/static/css/main.f855e6bc.css.map",
+    "main.3a4574b6.js.map": "/seanapark/test.git/static/js/main.3a4574b6.js.map",
+    "453.56f46472.chunk.js.map": "/seanapark/test.git/static/js/453.56f46472.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.3a4574b6.js"
+  ]
+}
