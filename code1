@@ -28,22 +28,22 @@
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-8" style="background-color: var(--bg-color); color: var(--text-color);">
         <section class="text-center">
-            <h2 class="text-3xl font-bold mb-4" style="color: var(--signature-color);">세미콜론 주식과 함께하세요</h2>
-            <p class="text-lg" style="color: var(--text-color);">주식 시장의 새로운 세상을 탐험하세요. 전문가와 함께 성장할 기회를 잡으세요.</p>
+            <h2 class="text-3xl font-bold mb-4" style="color: var(--signature-color);">semicolon</h2>
+            <p class="text-lg" style="color: var(--text-color);">어쩌고 ~~~~~~</p>
         </section>
 
         <section class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <div class="p-4 border rounded shadow hover:shadow-lg transition" style="border-color: var(--border-color); background-color: var(--bg-color);">
-                <h3 class="text-xl font-bold mb-2" style="color: var(--signature-color);">주식 차트 보기</h3>
-                <p style="color: var(--text-color);">실시간 주식 차트를 분석하고 트렌드를 확인하세요.</p>
+                <h3 class="text-xl font-bold mb-2" style="color: var(--signature-color);">#1</h3>
+                <p style="color: var(--text-color);">어쩌고 ~~~~~~~</p>
             </div>
             <div class="p-4 border rounded shadow hover:shadow-lg transition" style="border-color: var(--border-color); background-color: var(--bg-color);">
-                <h3 class="text-xl font-bold mb-2" style="color: var(--signature-color);">커뮤니티</h3>
-                <p style="color: var(--text-color);">다른 투자자들과 아이디어를 공유하고 토론하세요.</p>
+                <h3 class="text-xl font-bold mb-2" style="color: var(--signature-color);">#2</h3>
+                <p style="color: var(--text-color);">어쩌고 ~!~~~~~.</p>
             </div>
             <div class="p-4 border rounded shadow hover:shadow-lg transition" style="border-color: var(--border-color); background-color: var(--bg-color);">
-                <h3 class="text-xl font-bold mb-2" style="color: var(--signature-color);">교육 자료</h3>
-                <p style="color: var(--text-color);">주식 초보자를 위한 강의와 자료를 확인하세요.</p>
+                <h3 class="text-xl font-bold mb-2" style="color: var(--signature-color);">#3</h3>
+                <p style="color: var(--text-color);">어쩌고~~~.</p>
             </div>
         </section>
     </main>
@@ -51,7 +51,7 @@
     <!-- Footer -->
     <footer class="bg-gray-100 border-t border-gray-300 mt-8 py-4" style="background-color: var(--bg-color); border-color: var(--border-color);">
         <div class="container mx-auto text-center text-sm" style="color: var(--text-color);">
-            &copy; 2024 세미콜론 동아리. 모든 권리 보유.
+            &copy; 2024 semicolon. All rights reserved.
         </div>
     </footer>
 </body>
