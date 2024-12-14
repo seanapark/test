@@ -21,16 +21,8 @@
         }
     </style>
 </head>
-<body class="bg-white text-gray-800" data-theme="light">
+<body class="bg-white text-gray-800">
     <script>
-        // Toggle Dark Mode
-        function toggleTheme() {
-            const body = document.body;
-            const currentTheme = body.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            body.setAttribute('data-theme', newTheme);
-        }
-
         // Show Login Screen
         function showLoginScreen() {
             const loginScreen = document.createElement('div');
@@ -58,11 +50,10 @@
     </script>
 
     <!-- Navbar -->
-    <header class="bg-gray-100 border-b border-gray-300" style="background-color: var(--bg-color); border-color: var(--border-color);">
+    <header class="bg-gray-100 border-b border-gray-300">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <h1 class="text-xl font-bold" style="color: var(--signature-color);">세미콜론 주식</h1>
             <div class="space-x-4">
-                <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700" onclick="toggleTheme()">테마 전환</button>
                 <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700" onclick="showLoginScreen()">로그인</button>
                 <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">회원가입</button>
             </div>
