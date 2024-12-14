@@ -6,18 +6,38 @@
     <title>세미콜론 동아리 - 주식 홈페이지</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Tailwind의 기본 설정을 확장하고 싶다면 아래에 작성하세요 */
         :root {
             --signature-color: #a6f46c;
         }
+        [data-theme="dark"] {
+            --bg-color: #1a202c;
+            --text-color: #a0aec0;
+            --border-color: #2d3748;
+        }
+        [data-theme="light"] {
+            --bg-color: #ffffff;
+            --text-color: #4a5568;
+            --border-color: #cbd5e0;
+        }
     </style>
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-white text-gray-800" data-theme="light">
+    <script>
+        // Toggle Dark Mode
+        function toggleTheme() {
+            const body = document.body;
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            body.setAttribute('data-theme', newTheme);
+        }
+    </script>
+
     <!-- Navbar -->
-    <header class="bg-gray-100 border-b border-gray-300">
+    <header class="bg-gray-100 border-b border-gray-300" style="background-color: var(--bg-color); border-color: var(--border-color);">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <h1 class="text-xl font-bold" style="color: var(--signature-color);">세미콜론 주식</h1>
             <div class="space-x-4">
+                <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700" onclick="toggleTheme()">테마 전환</button>
                 <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">로그인</button>
                 <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">회원가입</button>
             </div>
@@ -25,32 +45,32 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container mx-auto px-4 py-8">
+    <main class="container mx-auto px-4 py-8" style="background-color: var(--bg-color); color: var(--text-color);">
         <section class="text-center">
-            <h2 class="text-3xl font-bold mb-4" style="color: var(--signature-color);">semicolon</h2>
-            <p class="text-lg text-gray-600">쓸내용 ~~~~ .</p>
+            <h2 class="text-3xl font-bold mb-4" style="color: var(--signature-color);">세미콜론 주식과 함께하세요</h2>
+            <p class="text-lg" style="color: var(--text-color);">주식 시장의 새로운 세상을 탐험하세요. 전문가와 함께 성장할 기회를 잡으세요.</p>
         </section>
 
         <section class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div class="p-4 border rounded shadow hover:shadow-lg transition">
-                <h3 class="text-xl font-bold mb-2" style="color: var(--signature-color);">no. 1</h3>
-                <p class="text-gray-600">쓸내용 ~~~~ .</p>
+            <div class="p-4 border rounded shadow hover:shadow-lg transition" style="border-color: var(--border-color); background-color: var(--bg-color);">
+                <h3 class="text-xl font-bold mb-2" style="color: var(--signature-color);">주식 차트 보기</h3>
+                <p style="color: var(--text-color);">실시간 주식 차트를 분석하고 트렌드를 확인하세요.</p>
             </div>
-            <div class="p-4 border rounded shadow hover:shadow-lg transition">
-                <h3 class="text-xl font-bold mb-2" style="color: var(--signature-color);">no. 2</h3>
-                <p class="text-gray-600">쓸내용 ~~~~~ .</p>
+            <div class="p-4 border rounded shadow hover:shadow-lg transition" style="border-color: var(--border-color); background-color: var(--bg-color);">
+                <h3 class="text-xl font-bold mb-2" style="color: var(--signature-color);">커뮤니티</h3>
+                <p style="color: var(--text-color);">다른 투자자들과 아이디어를 공유하고 토론하세요.</p>
             </div>
-            <div class="p-4 border rounded shadow hover:shadow-lg transition">
-                <h3 class="text-xl font-bold mb-2" style="color: var(--signature-color);">no. 3</h3>
-                <p class="text-gray-600">쓸내용 ~~~~~~.</p>
+            <div class="p-4 border rounded shadow hover:shadow-lg transition" style="border-color: var(--border-color); background-color: var(--bg-color);">
+                <h3 class="text-xl font-bold mb-2" style="color: var(--signature-color);">교육 자료</h3>
+                <p style="color: var(--text-color);">주식 초보자를 위한 강의와 자료를 확인하세요.</p>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-100 border-t border-gray-300 mt-8 py-4">
-        <div class="container mx-auto text-center text-sm text-gray-600">
-            &copy; 2024 semicolon. All rights reserved.
+    <footer class="bg-gray-100 border-t border-gray-300 mt-8 py-4" style="background-color: var(--bg-color); border-color: var(--border-color);">
+        <div class="container mx-auto text-center text-sm" style="color: var(--text-color);">
+            &copy; 2024 세미콜론 동아리. 모든 권리 보유.
         </div>
     </footer>
 </body>
