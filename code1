@@ -30,6 +30,31 @@
             const newTheme = currentTheme === 'light' ? 'dark' : 'light';
             body.setAttribute('data-theme', newTheme);
         }
+
+        // Show Login Screen
+        function showLoginScreen() {
+            const loginScreen = document.createElement('div');
+            loginScreen.id = 'login-screen';
+            loginScreen.className = 'fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center';
+            loginScreen.innerHTML = `
+                <div class="bg-white p-8 rounded shadow-lg text-center w-80">
+                    <h2 class="text-2xl font-bold mb-4" style="color: var(--signature-color);">로그인</h2>
+                    <input type="text" placeholder="아이디" class="border w-full p-2 mb-4 rounded" />
+                    <input type="password" placeholder="비밀번호" class="border w-full p-2 mb-4 rounded" />
+                    <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 w-full">로그인</button>
+                    <button onclick="closeLoginScreen()" class="mt-4 text-gray-600 hover:underline">닫기</button>
+                </div>
+            `;
+            document.body.appendChild(loginScreen);
+        }
+
+        // Close Login Screen
+        function closeLoginScreen() {
+            const loginScreen = document.getElementById('login-screen');
+            if (loginScreen) {
+                document.body.removeChild(loginScreen);
+            }
+        }
     </script>
 
     <!-- Navbar -->
@@ -38,7 +63,7 @@
             <h1 class="text-xl font-bold" style="color: var(--signature-color);">세미콜론 주식</h1>
             <div class="space-x-4">
                 <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700" onclick="toggleTheme()">테마 전환</button>
-                <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">로그인</button>
+                <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700" onclick="showLoginScreen()">로그인</button>
                 <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">회원가입</button>
             </div>
         </div>
